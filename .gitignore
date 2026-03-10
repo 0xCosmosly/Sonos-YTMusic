@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Cache/temp files
+*.m4a
+*.mp3
+*.mp4
+.cache/
+temp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
