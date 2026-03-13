@@ -68,4 +68,4 @@ Other Sonos tools rely on a broken Go CLI that fails with "no route to host" err
 
 ## License
 
-MIT
+MIT. See `LICENSE`.
