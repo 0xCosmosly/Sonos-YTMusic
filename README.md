@@ -47,3 +47,5 @@ Everything runs on your own machine and network.
 
 ---
 *Ask for a song, hear it on your Sonos.*
+
+<!-- contributor stats refresh -->
