@@ -1,13 +1,14 @@
 # Sonos YTMusic 🎵
 
-Play literally any song from YouTube directly on your Sonos speakers using a single terminal command. No YouTube Music subscription, broken Go CLIs, or complex API keys required.
+Bring on-demand YouTube Music playback to your Sonos speakers. Sonos's built-in YouTube Music integration doesn't let you just ask for a specific song and hear it right away — this tool fills that gap with a single terminal command.
 
 ## Features that make it great
 
-- **Universal Library**: If it's on YouTube, you can play it on your Sonos.
-- **High Quality**: Automatically grabs the highest quality `m4a` audio stream available.
-- **Direct SOAP Commands**: Bypasses the notoriously buggy Sonos developer APIs and talks directly to your speaker over your local network.
+- **True On-Demand Playback**: Name a song, and it starts playing on your Sonos.
+- **High Quality**: Automatically picks the highest-quality `m4a` audio stream available.
+- **Local Control**: Talks to your speaker directly over your home network using Sonos's standard UPnP/SOAP interface — no cloud account linking or developer API keys.
 - **Full Playback Control**: Play, pause, skip, and change the volume right from the command line.
+- **Agent-Friendly**: Plain-English commands make it easy to drive from scripts or AI agents.
 
 ## Getting Started
 
@@ -40,9 +41,9 @@ python3 sonos-ytmusic.py "volume 50"
 
 ## Under the Hood
 
-When you ask for a song, the script uses `yt-dlp` to search YouTube and extract the direct audio URL. It then spins up an ephemeral local HTTP server to host the stream, and fires a raw XML SOAP payload via `curl` straight to your Sonos speaker's IP address, telling it to play your local stream. 
+When you request a song, the script uses `yt-dlp` to find the track and resolve its audio stream. It then starts a short-lived local HTTP server to serve that stream and sends a SOAP command to your Sonos speaker on your local network, telling it to play from that server.
 
-It's fast, reliable, and completely local.
+Everything runs on your own machine and network.
 
 ---
-*Because playing music shouldn't require three subscriptions and a broken API.*
+*Ask for a song, hear it on your Sonos.*
