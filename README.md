@@ -20,7 +20,7 @@ Bring on-demand YouTube Music playback to your Sonos speakers. Sonos's built-in 
 
 ### Installation
 ```bash
-git clone https://github.com/0xCosmosly/Sonos-YTMusic.git
+git clone https://github.com/0xCosmosly/sonos-ytmusic.git
 cd Sonos-YTMusic
 ```
 
